@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(82,97,63,1) 87%)   
+        } 
+        fieldset{
+            width: 500px;
+            border: 5px solid black;
+            border-radius: 25px;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+        input[readonly] {
+          background-color: aqua;
+          color: black;
+          font-weight: 900;    
+        }
+        select{
+            background-color: aquamarine;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 200px;
+            color: blue;
+            cursor: pointer;
+        }
+        input[type="radio"]:checked{
+            height: 10px;
+            width: 10px;
+        }
+        input[type="radio"]:checked + label{
+           color: brown;
+           font-size: 20px;
+
+        }
+        p{
+            display: none;
+        }
+        input:hover+p{
+            display: inline;
+            color: black;
+            background-color: burlywood;
+            font-weight: 400;
+        }
+        input:focus{
+            background-color:cadetblue;
+            color:rgb(237, 243, 242);
+            font-weight: 600;
+        }
+        img{
+            display: none;
+        }
+        input[type="Email"]:focus:valid ~ img.valid
+        {
+         display: inline;
+         height: 18px;
+         width: 18px;    
+        }
+        input[type="Email"]:focus:invalid ~ img.invalid
+        {
+         display: inline;
+         height: 18px;
+         width: 18px;    
+        }
+    </style> 
+</head>
+<body>
+    
+</body>
+</html>
+
+<marquee direction="right"><h1><center>Course Registration Forms</center></h1></marquee> </marquee>
+
+<fieldset><legend>Personal Detail</legend>
+<form>
+    <table>
+        <tr>
+            <td><label>First Name</label></td>
+        
+        
+            <td><input type="text" placeholder="Vivek" name="fs" size="15" maxlength="10" required/>
+            <p>Enter your Name</p>
+            </td>
+        </tr><br>
+        <tr>
+            <td><label>Sure Name</label></td>
+        
+            <td><input type="text" placeholder="Y P" name="sn" size="15" maxlength="10"/>
+                <p>Enter your Sure Name</p>
+            </td>
+        </tr><br>
+        <tr>
+            <td><label>Mobile Number</label></td>
+        
+        
+            <td><input type="tel" placeholder="6432165334" name="mn" size="10" maxlength="10" required/>
+                <p>Enter your Mob No</p>
+            </td>
+        </tr><br>
+        <tr>
+            <td><label>Email</label>
+            </td>
+        
+            <td><input type="email" placeholder="xsaaskjb@gmail.com" name="email" required/>
+                <img src="/Not ok.png" class="valid"/>
+                <img src="/verified.png" class="invalid"/>
+            <p>Atleast provide 1 Uppercase,1 Lowercase, 1 Spl ch</p>
+            </td>
+        </tr><br> 
+        <tr>
+            <td><label>Password</label></td>
+        
+        
+            <td><input type="password" name="pwd" placeholder="min 8 character" min="8" size="15" required/>
+            <p>Atleast provide 1 Uppercase,1 Lowercase,1 spl character</p>
+            </td>
+        </tr><br>
+        <tr>
+            <td><label>Conform Password</label></td>
+        
+        <td><input type="password" name="pwd" placeholder="min 8 character" min="8" size="15" required/>
+            <p>Enter your Conform Password</p>
+        </td>
+        </tr><br>
+        <tr>
+            <td><label>DOB</label></td>
+        
+        <td><input type="date" placeholder="28/07/2002" name="DOB" required/>
+            <p>Enter your DOB</p>
+        </td>
+        <td><label> AGE</label></td>
+        <td><input type="number" name="age" required min="18" max="100">
+        <img class="valid" src="verified.png">
+        <img class="invalid" src="Not ok.png">
+            <br>
+        </td>
+        </tr><br>
+        <tr>
+            <td><lable>Gender</lable></td>
+            <td><input type="radio" name="Gender" value="M"><label>Male</label> <input type="radio" name="Gender" value="F"><label>Female </label><input type="radio" name="Gender" value="O"><label>Other</label>
+                <p>Select your Gender</p>
+            </td>
+        </tr><br>
+        <tr>
+            <td><label>Select Country</label></td>
+            <td><select>
+                <option>India</option>
+                <option>China</option>
+                <option>USA</option>
+            </select></td>
+        </tr><br>
+        <tr>
+            <td><label for="">Uplode Picture</label></td>
+            <td><input type="file" name="Photo" required>
+            <p>Please upload file</p>
+            </td>
+
+        </tr><br>
+
+        <tr>
+            <td><input type="Reset" ></td>
+
+        </tr>
+
+
+        
+    </table>
+</fieldset>
+</form>
+
+<fieldset><legend>Course Details</legend> 
+<form>
+<label>Select Course</label><br>
+<select>
+    <option>Python Full Stack</option>
+    <option>Java Full Stack</option>
+</select><br>
+<label>Delevery Mode</label>
+<input type="checkbox"/>online 
+<input type="checkbox"/>offline<br>
+<label>Institute Name</label> <input type="text" placeholder="thetapacademy" readonly><br>
+<label>Comments</label><br>
+<textarea name="" cols="60" rows="20"></textarea><br>
+<input type="submit"
+</fieldset>
+ 
+</form>
+
+<a href="html image.png" download>Click here to download</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
